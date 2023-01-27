@@ -6,9 +6,7 @@ But before that, let's get started with the installation (good luck...)
 ## Installation
 
 <details>
-  <summary>Click me</summary>
-
-### Ubuntu:
+  <summary>Ubuntu:</summary>
 
 Let's first install a webserver to host the Laravel application. You can either use [Apache](https://httpd.apache.org/) or [Nginx](https://www.nginx.com/) web server. 
 
