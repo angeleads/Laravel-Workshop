@@ -149,3 +149,103 @@ $ sudo systemctl restart apache2
 Finally, to access Laravel visit your server's FQDN or IP address. The default Laravel webpage will be displayed.
 
 </details>
+
+<details>
+  <summary>Fedora</summary>
+
+## Step 1: Install PHP
+
+Since it is a PHP framework it is obvious that you must install PHP. So let’s go for it.
+```
+$ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml php-cli php-json
+```
+
+## Step 2: Install MySQL
+Follow these [easy step](https://computingforgeeks.com/how-to-install-mysql-8-on-fedora/)***If you meet any issue, feel free to come to me :)***
+
+## Step 3: Install Composer
+Composer is a dependencies manager for PHP. So, it is very useful to manage libraries required by our projects and is used to install Laravel.
+```
+$ curl -sS https://getcomposer.org/installer | php
+```
+
+Then, make sure that Composer can be used globally in the terminal.
+
+```
+$ sudo mv composer.phar /usr/local/bin/composer
+$ sudo chmod +x /usr/local/bin/composer
+$ composer -V
+```
+
+## Step 4: Install Laravel
+
+It’s time to install Laravel. So, run this command.
+```
+$ composer global require "laravel/installer"
+```
+Once the installation is finished. You can create a new project. But, first, make Laravel executable available for the system.
+
+```
+$ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
+```
+
+Then, close the terminal and open it again. Now, create a project.
+```
+$ laravel new example
+```
+```
+$ php artisan serve
+```
+As you can see, the IP address you need to go is 127.0.0.1:8000. Also you can specify a diferent host and port. For example:
+
+```
+$ php artisan serve --host=0.0.0.0 --port=1234
+```
+
+</details>
+
+After making sure everything is installed and fully functional, make sure to follow these activities
+
+## Activities
+For this workshop, you will be handling a music shop's website!
+
+With the given database ***music.sql***, make your own shop :)
+
+
+### Step 1: Create card component
+Go through the views sections and create a component to create cards.
+The cards need to have a label for:
+- Image for the album
+- Name of the artist
+- Title of the album
+- Genre
+- Release date
+
+### Step 2: From database to laravel
+Now to the tricky part! 
+
+You are now asked to put the information given in the database in the component you previously made.
+
+Make sure to import the SQL script with the .env file :)
+
+### Step 3: Add a card
+Good job! If you already made it all the way here you're a literal pro!
+
+Now I'm going to ask you to create a button to add a card, it will create an empty card that has text input where you can add the component cards information and save thanks to a button
+
+### Step 4: Delete a card
+Almost there!
+
+Now all you need to do is make a delete button at the top right of the cards and when clicked, the cards disappear and their information is removed from the database.
+
+### Step 5: Update a card
+Final step! You're a legend!
+
+For this one, create an edit button that helps you change the card's information and update it even on the database.
+
+
+### Collaborators
+
+[Angel Amélia Halouane](https://github.com/angeleads)
+
+[Blanca Sibecas Hernandez](https://github.com/bsibecas)
