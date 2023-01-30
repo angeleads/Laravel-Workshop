@@ -246,7 +246,7 @@ Insert manually your favorite Albums and Artists in SQL do follow the rest of th
 
 <details>
   <summary>Hint</summary>
-[learn about mysql](https://www.w3schools.com/MySQL/default.asp)
+(learn about mysql)[https://www.w3schools.com/MySQL/default.asp]
 </details>
 
 You are now asked to put the information given in the database in the component you previously made.
