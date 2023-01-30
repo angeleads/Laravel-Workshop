@@ -6,7 +6,7 @@ But before that, let's get started with the installation (good luck...)
 ## Installation
 
 <details>
-  <summary>Ubuntu:</summary>
+  <summary>Ubuntu</summary>
 
 Let's first install a webserver to host the Laravel application. You can either use [Apache](https://httpd.apache.org/) or [Nginx](https://www.nginx.com/) web server. 
 
@@ -242,6 +242,12 @@ The cards need to have a label for:
 
 ### Step 2: From database to laravel
 Now to the tricky part! 
+Insert manually your favorite Albums and Artists in SQL do follow the rest of the activities
+
+<details>
+  <summary>Hint</summary>
+[learn about mysql](https://www.w3schools.com/MySQL/default.asp)
+</details>
 
 You are now asked to put the information given in the database in the component you previously made.
 
