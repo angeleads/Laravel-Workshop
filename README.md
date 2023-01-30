@@ -229,7 +229,7 @@ Then, all you need to do is use that database
 Now that you're all set, let your laravel project know about that database
 In the *.env* given file, enter your information as such
 
-![database-exemple](https://github.com/angeleads/Laravel-Workshop/tree/main/resources/laravel-music-database.png?raw=true)
+![laravel-music-database](https://user-images.githubusercontent.com/63232950/215416913-1adda7b3-2ea1-418b-9b41-0cc6b95780aa.png)
 
 ### Step 1: Create card component
 Go through the views sections and create a component to create cards.
